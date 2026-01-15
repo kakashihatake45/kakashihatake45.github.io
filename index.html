@@ -9,6 +9,9 @@
   <link href="https://fonts.cdnfonts.com/css/manga-style" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -57,6 +60,9 @@
       <a href="https://github.com/kakashihatake45">GitHub</a>
     </p>
   </div>
+
+  <!-- Markdown-rendered notes/blogs will go here -->
+  <div class="card" id="content"></div>
 </section>
 
 <section id="contact">
@@ -68,17 +74,25 @@
   BELIEVE IT.
 </footer>
 
-<!-- JS -->
-<script src="theme.js"></script>
-<script src="typing.js"></script>
-<script src="content.js"></script>
-
-</body>
-</html>
-
-
+<!-- JS libraries -->
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<!-- Your JS -->
+<script src="theme.js"></script>
+<script src="typing.js"></script>
+<script src="content.js"></script>
+
+<script>
+  renderMathInElement(document.body, {
+    delimiters: [
+      {left: "$$", right: "$$", display: true},
+      {left: "$", right: "$", display: false}
+    ]
+  });
+</script>
+
+</body>
+</html>
+
