@@ -1,4 +1,3 @@
-
 async function loadMarkdown(file, targetId) {
   const res = await fetch(file);
   const text = await res.text();
@@ -15,3 +14,4 @@ async function loadMarkdown(file, targetId) {
     ]
   });
 }
+
