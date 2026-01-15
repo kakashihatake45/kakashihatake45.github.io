@@ -1,85 +1,78 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Debanjan</title>
-    <img src="imageskoto.jpg" alt="">
+  <meta charset="UTF-8">
+  <title>Debanjan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   
-    <style>
-        
-        h2{
-            color: aqua;
-            text-decoration: wavy;
-            background-color:palevioletred;
+  <!-- Fonts -->
+  <link href="https://fonts.cdnfonts.com/css/manga-style" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-        }
-        /* Element selector */
-        p{
-            border: 2px solid red;
-            background-image: -webkit-image-set(imageskoto.jpg);
-        }
-        
-        /* Id selector */
-        #firstPara{
-            color: blue;
-            font-style: inherit;
-        }
-
-        /* Class selector */
-        .bgBlue{
-            color: yellow;
-            background-color:pink;
-        }
-
-        /* Grouping selector */
-        footer{
-            background-color: pink; 
-        }
-        span{ 
-            color: coral;
-            
-        }
-    </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h2>Welcome! grab a cup of tea and please take time to have a patient read. </h2>
-    <img src="" alt="">
-    <div>
-    <p id="firstPara">I am Debanjan Sinha Mahapatra , a BS-MS sophomore at IISER KOLKATA, I have physics, chemistry and mathematics as my subject and having pretty intersting courses(though I just like to do classes , so you can find me in other classes and randomly trying to take part in fascinating science discussions:).Currently I am working on understanding the physics behind quantum computations and quantum gates and learning electronic structure theory and quantum mechanics. I am also interested in spectroscopy, astrophysics,and soft condensed matter physics and nanotechnology.I don't know where will I end up. But I am just trying to enjoy the journey. Though I have decided that I would go for a Phd after my MS and my goal at the point is to have excellent research experiece and secure a good Phd position.</p>
-    </div>
 
-    <div>
-    <p id="secondPara" class="redElement bgBlue">In case you want to get familiar with my academic lifestyle here is my schedule. I have classes almost throughout the day. 
-        <br>
-        <a href="Class_Schedule_Template__Copy_ (1).pdf"><strong>go to schedule</strong></a>
-        <br>
-For a record of my past academic endeavours , my CV is below.
-        <br>
-        <a href="DEBANJAN_SINHA MAHAPATRA_Resume_31-07-2023-14-40-33.pdf"><strong>go to cv</strong></a>
-        <br>
-My official email is in my CV. you can contact me through that.
-         <br>
-The link to my github account is below
-         <br>
-         <a href="https://github.com/kakashihatake45"><strong>go to github</strong></a>
+<header>
+  <h1 id="typing"></h1>
+  <p class="subtitle">Physics • Curiosity • BELIEVE IT.</p>
+  <button onclick="toggleTheme()">🌙</button>
+</header>
+
+<nav>
+  <a href="#personal">Personal</a>
+  <a href="#professional">Professional</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="personal">
+  <h2>Personal</h2>
+
+  <div class="card">
+    <p>
+      I am a BS-MS student at IISER Kolkata, exploring physics, chemistry,
+      and mathematics. I enjoy learning across disciplines and
+      following curiosity wherever it leads.
     </p>
+  </div>
 
+  <div class="card">
+    <p>
+      I love literature (especially Bengali), anime, films, quizzes,
+      chess, and badminton. Steins;Gate, Attack on Titan, and Naruto
+      are close to my heart.
+    </p>
+  </div>
+</section>
 
+<section id="professional">
+  <h2>Professional</h2>
 
-    <div>
-        <p>Apart from rigorous regular academic framework, I like to read books covering topics in a broad spectrum from religion to crime, and from fiction to popular science. I am a voracious reader of bengali literature , and I love the works of Saratchandra, Bankimchandra, Rabindranath, Bhibhutibhushan, Tarashankar, Prabhatkumarto name a few. Though drama and fantasy is my favourite genre , sometimes I make my mind warm by thrillers and detective stories. Sherlock Holmes and Hercule Poirot are my favourite detectives (the former is the inspiration for chemistry),I have not read much of literature of other language. In English I have read and loved the poems of Alfred Tennyson, some of the dramas by Shakespeare, Charles Dickens, Jerome K Jerome. Recently I read the vinci code , and it was worth it :). And yeah I have read some mangas also, they are just too creepy to share here.
+  <div class="card">
+    <p>
+      <a href="Class_Schedule_Template__Copy_ (1).pdf">Class Schedule</a><br>
+      <a href="DEBANJAN_SINHA MAHAPATRA_Resume_31-07-2023-14-40-33.pdf">Curriculum Vitae</a><br>
+      <a href="https://github.com/kakashihatake45">GitHub</a>
+    </p>
+  </div>
+</section>
 
-             </p>
-        <span>Apart from books. I am into coding and trying out different softwares. I can play little bit of Tabla. I love acting. I watched lots of movies , almost all of Leo D Caprio and Nolan. I used to watch lots of Animes and watched all of the masterpiece animes ,among which Steins gate and Attack on Titan, and Naruto are my favourite.I also like sports. Though an ameture in all except Badminton and Chess. And yeah I love quizing.Especially sportsquiz. </span>
-    </div>
-    <div>
-    <footer> Lastly I live on one philosophy in life. BELIVE IT.</div>
-        
-        
-  <p>suggest me some improvements to make , by contacting me . I am just too naive sometimes.</p>
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email available in CV</p>
+</section>
+
+<footer>
+  BELIEVE IT.
+</footer>
+
+<!-- JS -->
+<script src="theme.js"></script>
+<script src="typing.js"></script>
+<script src="content.js"></script>
+
 </body>
 </html>
+
