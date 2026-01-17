@@ -1,7 +1,11 @@
 async function loadMarkdown(file, targetId) {
   const res = await fetch(file);
-  const text = await res.text();
 
+  if (!res.ok) {
+    throw new Error("Failed to load " + file);
+  }
+
+  const text = await res.text();
   const html = marked.parse(text);
   const container = document.getElementById(targetId);
 
@@ -15,3 +19,5 @@ async function loadMarkdown(file, targetId) {
   });
 }
 
+// 👇 THIS WAS MISSING
+loadMarkdown("blogs/first-post.md", "content");
