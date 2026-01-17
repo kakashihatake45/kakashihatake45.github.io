@@ -61,21 +61,17 @@
     </p>
   </div>
 
-  <!-- BLOG LINKS -->
+  <!-- Blogs section with new-tab links -->
   <div class="card">
     <h3>Blogs</h3>
     <ul>
       <li>
-        <a href="#" onclick="loadMarkdown('blogs/first-post.md', 'content'); return false;">
-          First Blog Post
-        </a>
+        <a href="blogs/first-post.md" target="_blank">First Blog Post</a>
       </li>
       <!-- Add more posts here -->
     </ul>
   </div>
 
-  <!-- Markdown-rendered notes/blogs will appear here -->
-  <div class="card" id="content"></div>
 </section>
 
 <section id="contact">
@@ -92,14 +88,12 @@
 </footer>
 
 <!-- JS libraries -->
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" defer></script>
 
 <!-- Your JS -->
 <script src="theme.js" defer></script>
 <script src="typing.js" defer></script>
-<script src="content.js" defer></script>
 
 <script defer>
   document.addEventListener("DOMContentLoaded", () => {
@@ -114,5 +108,4 @@
 
 </body>
 </html>
-
 
