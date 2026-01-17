@@ -61,7 +61,20 @@
     </p>
   </div>
 
-  <!-- Markdown-rendered notes/blogs will go here -->
+  <!-- BLOG LINKS -->
+  <div class="card">
+    <h3>Blogs</h3>
+    <ul>
+      <li>
+        <a href="#" onclick="loadMarkdown('blogs/first-post.md', 'content'); return false;">
+          First Blog Post
+        </a>
+      </li>
+      <!-- Add more posts here -->
+    </ul>
+  </div>
+
+  <!-- Markdown-rendered notes/blogs will appear here -->
   <div class="card" id="content"></div>
 </section>
 
@@ -71,37 +84,35 @@
 </section>
 
 <footer>
-  
-“Wir mussen wissen. Wir werden wissen. (We must know. We will know.)
+“Wir mussen wissen. Wir werden wissen. (We must know. We will know.)  
+[Inscribed on his tomb in Gottingen.]”  
+― David Hilbert  
 
-[Inscribed on his tomb in Gottingen.]”
-― David Hilbert 
-
-<a href = "https://matt.might.net/articles/phd-school-in-pictures/"> Never forget the bigger picture</a><br>
+<a href="https://matt.might.net/articles/phd-school-in-pictures/">Never forget the bigger picture</a>
 </footer>
 
 <!-- JS libraries -->
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" defer></script>
 
 <!-- Your JS -->
-<script src="theme.js"></script>
-<script src="typing.js"></script>
-<script src="content.js"></script>
+<script src="theme.js" defer></script>
+<script src="typing.js" defer></script>
+<script src="content.js" defer></script>
 
-<script>
-  renderMathInElement(document.body, {
-    delimiters: [
-      {left: "$$", right: "$$", display: true},
-      {left: "$", right: "$", display: false}
-    ]
+<script defer>
+  document.addEventListener("DOMContentLoaded", () => {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false}
+      ]
+    });
   });
 </script>
 
 </body>
 </html>
-
-
 
 
